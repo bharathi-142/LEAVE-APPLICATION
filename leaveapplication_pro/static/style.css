@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    background: #000000;
+}
+
+/* ===== BACKGROUND ===== */
+.main-bg, .login-bg {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #1a1a1a, #000000);
+}
+
+/* ===== GLASS CONTAINER ===== */
+.container, .login-box {
+    width: 95%;
+    max-width: 1200px;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+
+    background: rgba(255, 215, 0, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow: 0 8px 30px rgba(250, 204, 21, 0.25);
+    color: #fef9c3;
+}
+
+/* LOGIN SMALL BOX */
+.login-box {
+    max-width: 350px;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #facc15;
+    text-shadow: 0 0 12px rgba(250, 204, 21, 0.7);
+}
+
+/* ===== LABELS ===== */
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fde68a;
+}
+
+/* ===== INPUTS ===== */
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: #fef9c3;
+}
+
+/* INPUT FOCUS */
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 12px #facc15;
+}
+
+/* ===== BUTTONS ===== */
+button, input[type="submit"], a {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+
+    background: linear-gradient(135deg, #facc15, #eab308);
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+button:hover, input[type="submit"]:hover, a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(250, 204, 21, 0.7);
+}
+
+/* BACK BUTTON */
+.back-btn {
+    background: linear-gradient(135deg, #fde047, #facc15);
+    color: #000;
+}
+
+/* ===== MENU ===== */
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 15px 0;
+}
+
+/* ===== TABLE ===== */
+.table-box {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* TABLE HEADER */
+th {
+    background: linear-gradient(135deg, #facc15, #eab308);
+    color: #000000;
+    padding: 14px;
+    font-size: 15px;
+}
+
+/* TABLE CELLS */
+td {
+    padding: 14px;
+    text-align: center;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fef9c3;
+}
+
+/* ROW HOVER */
+tr:hover td {
+    background: rgba(250, 204, 21, 0.15);
+}
+
+/* ===== STATUS TAGS ===== */
+.approved {
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #22c55e;
+    color: white;
+}
+
+.rejected {
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #ef4444;
+    color: white;
+}
+
+.pending {
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #f59e0b;
+    color: white;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.btn {
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.approve {
+    background: #22c55e;
+}
+
+.reject {
+    background: #ef4444;
+}
+/* COMPANY NAME TOP LEFT */
+.company-header-left {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    text-align: left;
+}
+/* COMPANY NAME TOP LEFT */
+.company-header-left {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    text-align: left;
+}
+
+/* COMPANY NAME */
+.company-header-left .company-name {
+    font-size: 36px;       /* bigger */
+    font-weight: 900;      /* bold */
+    color: #f1c40f;        /* golden */
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px rgba(241,196,15,0.9), 0 0 12px rgba(0,0,0,0.5); /* glow */
+}
+
+/* COMPANY TAGLINE */
+.company-header-left .company-tagline {
+    font-size: 22px;       /* bigger */
+    font-weight: 800;      /* bold */
+    color: #f1c40f;        /* golden */
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 6px rgba(241,196,15,0.8), 0 0 8px rgba(0,0,0,0.4); /* glow */
+}

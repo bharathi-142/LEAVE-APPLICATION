@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="main-bg">
+
+    <div class="container">
+        <h2>Welcome {{ name }}</h2>
+
+        <ul class="menu">
+            <li><a href="/apply_leave">Apply Leave</a></li>
+            <li><a href="/admin">Admin Dashboard</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

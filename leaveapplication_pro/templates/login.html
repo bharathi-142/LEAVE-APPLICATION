@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="login-bg">
+
+    <!-- COMPANY NAME TOP LEFT -->
+    <div class="company-header-left">
+        <div class="company-name">INTELLICA PVT Ltd</div>
+        <div class="company-tagline">Employee Portal - Welcome</div>
+    </div>
+
+    <div class="login-box">
+        <h2>Employee Login</h2>
+
+        <form method="POST">
+            <input type="text" name="emp_id" placeholder="Enter Employee ID" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

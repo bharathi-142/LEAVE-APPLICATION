@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply Leave</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="main-bg">
+
+    <div class="container">
+        <h2>Apply Leave</h2>
+
+        <form method="POST">
+            <label>Leave Type:</label>
+            <input type="text" name="leave_type" required>
+
+            <label>From:</label>
+            <input type="date" name="from_date" required>
+
+            <label>To:</label>
+            <input type="date" name="to_date" required>
+
+            <label>Reason:</label>
+            <textarea name="reason" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <br>
+        <a href="/dashboard" class="back-btn">Back to Dashboard</a>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
